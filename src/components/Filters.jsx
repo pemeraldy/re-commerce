@@ -3,7 +3,7 @@ import React from 'react'
 function Filters() {
   return (
     <div className='flex justify-between items-center font-tenor'>
-      <h3 className='uppercase'>4500 Apparel</h3>
+      <h3 className='uppercase text-xs'>10/4500 Apparels</h3>
 
         <form >
           <div className='flex space-x-2'>
