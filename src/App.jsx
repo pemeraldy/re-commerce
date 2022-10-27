@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation"
 import Filters from "./components/Filters"
 import ProductCard from "./components/ProductCard"
 import ProductGridLayout from "./components/ProductGridLayout"
+import Pagination from "./components/Pagination"
 function App() {
   return (
     <div className="App">
@@ -15,8 +16,12 @@ function App() {
           <ProductGridLayout>           
             <ProductCard />
             <ProductCard />
+            <ProductCard />
+            <ProductCard />
           </ProductGridLayout>
-          
+          <div className="mt-10 mx-auto w-full">
+            <Pagination />
+          </div>
         </div>
       </Layout>
     </div>
