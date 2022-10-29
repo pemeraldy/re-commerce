@@ -1,14 +1,21 @@
 import React from 'react'
 import Divider from '../assets/icons/divider-sm.svg'
 
-function MobileMenuDropdown() {
+import {useNav} from '../composables/useNav.js'
+
+function MobileMenuDropdown({closeNav}) {
+  const [showNav, setShowNav] = useNav(false)
+  const tt = () =>{
+    console.log(showNav, 'Clicked')
+    setShowNav(true)
+  }
   return (
     <div className='fixed top-0 left-0 w-full h-screen pt-3 px-4 bg-white z-10 pb-10 font-tenor'>
       <div className='relative w-full h-full'>
 
       
       <div>
-        <button className=' w-6 h-6 flex justify-center items-center'>
+        <button onClick={()=> closeNav()} className=' w-6 h-6 flex justify-center items-center'>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 6L18.7742 18.7742" stroke="#333333" stroke-linejoin="round"/>
             <path d="M6 18.7744L18.7742 6.00022" stroke="#333333" stroke-linejoin="round"/>
