@@ -8,8 +8,8 @@ function Filters() {
         <form >
           <div className='flex space-x-2'>
             <select className='bg-gray-100 w-[72px] rounded-2xl' name="type" id="">
-              <option className='font-tenor' value="latest">
-                Latest
+              <option className='font-tenor text-gray-500' value="latest">
+                New
               </option>
               <option value="exp">Expensive</option>
             </select>

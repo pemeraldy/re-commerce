@@ -3,7 +3,7 @@ import Product from '../assets/img/product-sample.png'
 function ProductCard() {
   return (
     <div className=' '>
-      <div className='relative w-full max-w-[165px] h-[220px]'>
+      <div className='relative w-full max-w-[165px] h-[220px] md:h-[332px] md:max-w-full'>
         <img className='absolute w-full h-full object-cover' src={Product} alt="product image" />
         <span className='absolute bottom-2 right-2'>
           <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">

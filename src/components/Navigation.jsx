@@ -3,10 +3,12 @@ import Logo from '../assets/logo.svg'
 import Menu from '../assets/menuicon.svg'
 import SearchIcon from '../assets/search-icon.svg'
 import CartIcon from '../assets/cart.svg'
+import MobileMenuDropdown from './MobileMenuDropdown'
 
 function Navigation() {
   return (
      <div className="flex font-tenor justify-between">
+        <MobileMenuDropdown />
         <button>
           <img src={Menu} alt="menu icon" />
         </button>
