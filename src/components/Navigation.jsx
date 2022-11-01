@@ -6,8 +6,6 @@ import CartIcon from '../assets/cart.svg'
 import MobileMenuDropdown from './MobileMenuDropdown'
 
 
-import {useNav} from '../composables/useNav.js'
-
 function Navigation() {
   const [showNav, setShowNav] = useState(false)
   return (
@@ -15,7 +13,7 @@ function Navigation() {
         {
           showNav && <MobileMenuDropdown closeNav={() => setShowNav(false)} />
         }
-        <button onClick={()=>setShowNav(true)}>
+        <button className='md:hidden' onClick={()=>setShowNav(true)}>
           <img src={Menu} alt="menu icon" />
         </button>
         

@@ -2,7 +2,7 @@ import React from 'react'
 import Product from '../assets/img/product-sample.png'
 function ProductCard() {
   return (
-    <div className=' '>
+    <div className=''>
       <div className='relative w-full max-w-[165px] h-[220px] md:h-[332px] md:max-w-full'>
         <img className='absolute w-full h-full object-cover' src={Product} alt="product image" />
         <span className='absolute bottom-2 right-2'>
@@ -12,9 +12,9 @@ function ProductCard() {
         </span>
       </div>
       <div className='mt-2  font-tenor text-xs'>
-        <h4 className='font-bold'>21WN</h4>
-        <p className='text-gray-500'>Lorem ipsum dolor sit...</p>
-        <h2 className='text-[#DD8560] mt-2 font-bold'>$22.59</h2>
+        <h4 className='font-bold md:text-lg'>Adiddas</h4>
+        <p className='text-gray-500 md:text-base'>Lorem ipsum dolor sit...</p>
+        <h2 className='text-[#DD8560] mt-2 font-bold md:text-lg '>$22.59</h2>
       </div>
     </div>
   )

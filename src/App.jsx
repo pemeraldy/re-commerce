@@ -14,10 +14,11 @@ function App() {
         </div>
         <div className="mt-8">
           <ProductGridLayout>           
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {
+              Array.from(Array(5)).map((item, index) =>{
+                  return <ProductCard key={index} />    
+              })
+            }
           </ProductGridLayout>
           <div className="mt-10 mx-auto w-full">
             <Pagination />

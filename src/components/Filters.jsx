@@ -26,7 +26,7 @@ function Filters() {
             </button>
             <button type='button' className=' flex justify-center items-center w-[36px] h-[36px] rounded-full bg-gray-100'>
               <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 0.356232V1.18957H15.5V0.356232H0.5ZM6.33333 7.85623H9.66667V7.0229H6.33333V7.85623ZM13 4.5229H3V3.68956H13V4.5229Z" fill="#DD8560"/>
+              <path fillRule="evenodd" clipRule="evenodd" d="M0.5 0.356232V1.18957H15.5V0.356232H0.5ZM6.33333 7.85623H9.66667V7.0229H6.33333V7.85623ZM13 4.5229H3V3.68956H13V4.5229Z" fill="#DD8560"/>
               </svg>
             </button>
           </div>
